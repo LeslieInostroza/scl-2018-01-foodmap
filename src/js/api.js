@@ -11,6 +11,5 @@ fetch(ubication)
 });
 
 const renderInfo = (explorer) => {
-  containerTitle.innerHTML = `${JSON.stringify(explorer.results.items[0].vicinity
-  )}`;
+  containerTitle.innerHTML += `${JSON.stringify(explorer.results.items[0].title)}`;
 }
