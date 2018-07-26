@@ -4,3 +4,12 @@
   position: relative;
   margin: auto;
 }
+h1{
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: white;
+}
+body{
+  background-color: gray;
+}
