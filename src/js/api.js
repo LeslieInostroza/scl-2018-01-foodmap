@@ -8,11 +8,17 @@ inputGroupSelect02.addEventListener('change', () => {
   .then(response => response.json())
   .then(explorer => {
     console.log(explorer);
+    explorer.results.items.forEach((item)=>{
+      let explorer = {
+      name: item.title,
+      direccion: item.vicinity
+    }
+    });
     renderInfo(explorer);
   });
 });
 
 const renderInfo = (explorer) => {
-  containerTitle.innerHTML += `${JSON.stringify(explorer.results.items[0].title)}
-  ${JSON.stringify(explorer.results.items[0].vicinity)}`;
+  containerTitle.innerHTML += `<p>${JSON.stringify(explorer.results.items[0].title)}
+  ${JSON.stringify(explorer.results.items[0].vicinity)}</p>`;
 }
