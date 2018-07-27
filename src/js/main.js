@@ -29,9 +29,10 @@ let map = new H.Map(
 );
 let behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
 
+let HEREHQcoordinates;
 //aqui empieza la geolocalizacion watchPosition Este método llamará a la función de éxito cada vez que cambie la posición del dispositivo.
 function updatePosition (event) {
-  let HEREHQcoordinates = {
+  HEREHQcoordinates = {
     lat: event.coords.latitude,
     lng: event.coords.longitude
   };
